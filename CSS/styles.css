@@ -242,7 +242,6 @@ footer {
     margin-right: 0.5rem;
  }
 
-
 /* Estilos de los párrafos en el footer */
 footer p {
     font-size: 14px;
@@ -251,8 +250,26 @@ footer p {
 
 footer p:first-child {
     font-size: 24px;
-    text-shadow: 3px 3px 40px rgb(167, 174, 169);
+
 }
+
+/* Media query para ajustar la sombra de texto en dispositivos más pequeños */
+@media (max-width: 768px) {
+    footer p:first-child {
+        font-size: 15px; /* Reducir el tamaño de fuente en dispositivos más pequeños */
+      
+    }
+
+    footer p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+
+
+}
+
+
 /* barra de navegacion  */
 
 nav ul {
