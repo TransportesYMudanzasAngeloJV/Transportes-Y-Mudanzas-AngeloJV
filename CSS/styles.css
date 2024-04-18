@@ -310,14 +310,21 @@ nav ul li a {
 }
 
 .call-button {
+    background-color: #bd1c0a; /* Color de fondo del botón */
     position: absolute;
     bottom: 10px; /* Ajusta la distancia desde la parte inferior */
     right: 10px; /* Ajusta la distancia desde el borde derecho */
-    background: linear-gradient(0deg, rgb(226, 4, 4) 0%, rgba(55, 8, 8, 0.875) 0%, rgba(214, 9, 9, 0.891) 84%);
     color: #fff; /* Color del texto del botón */
     padding: 10px 20px; /* Ajusta el padding del botón */
     border-radius: 8px; /* Ajusta el radio del borde del botón */
     text-decoration: none; /* Elimina la subrayado del enlace */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    background-image: url('/img/llamar.png'); /* Ruta de la imagen del icono */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-size: 20px; /* Tamaño del icono */
+    background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
+    padding-left: 40px;
+    
 }
 
 .call-button:hover {
@@ -327,6 +334,12 @@ nav ul li a {
     padding: 10px 20px; /* Ajusta el padding del botón */
     border-radius: 8px; /* Ajusta el radio del borde del botón */
     text-decoration: none; /* Elimina la subrayado del enlace */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    background-image: url('/img/llamar.png'); /* Ruta de la imagen del icono */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-size: 20px; /* Tamaño del icono */
+    background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
+    padding-left: 40px;
 }
 @media (max-width: 768px) {
     .call-button {
@@ -335,6 +348,13 @@ nav ul li a {
         right: 2%; /* Ajusta la distancia desde el borde derecho (en porcentaje) */
         padding: 0.6rem 0.5rem; /* Ajusta el padding del botón para dispositivos pequeños */
         font-size: 13PX;
+        transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        background-image: url('/img/llamar.png'); /* Ruta de la imagen del icono */
+        background-repeat: no-repeat; /* Evita que el fondo se repita */
+        background-size: 20px; /* Tamaño del icono */
+        background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
+        padding-left: 33px;
+
     }
 }
 /* quienes somos */
