@@ -1,0 +1,923 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+@media (max-width: 440px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+header {
+    background: linear-gradient(225deg, #443e3e, #000000);
+    box-shadow: 1.5px 1.5px 4px #b3b3b3;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    transition: 600ms all ease-in-out;
+    font-size: 18px;
+   
+}
+
+header.transparente {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #c6c5cc;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: 300ms ease-in-out all;
+    margin-right: 2em;
+}
+
+header.transparente nav a {
+    color: rgba(255, 255, 255, 0.952);
+}
+
+
+header nav a:hover {
+    color: rgb(213, 207, 207);
+    font-weight: bold;
+}
+
+
+header.transparente nav a:hover {
+    color: white;
+}
+
+
+/* Botón burger */
+
+#burger {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+#burger .barra {
+    width: 30px;
+    height: 2px;
+    margin: 6px;
+    background-color: #ebebeb;
+    transition: 400ms all ease-in-out
+}
+
+#burger.abierto .barra {
+    background-color: white;
+}
+
+#burger.abierto .barra.superior {
+    transform: translateY(8px) rotateZ(45deg);
+}
+
+#burger.abierto .barra.media {
+    width: 0;
+}
+
+#burger.abierto .barra.inferior {
+    transform: translateY(-8px) rotateZ(-45deg);
+}
+
+@media (max-width: 620px) {
+    #burger {
+        display: block;
+    }
+
+    header {
+        justify-content: flex-end;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+/* Menú lateral */
+
+.menu {
+    width: 360px;
+    height: 100vh;
+    background-color: #424242;
+    position: fixed;
+    top: 0;
+    left: -360px;
+    padding-top: 40px;
+    transition: all 700ms ease-in-out;
+    z-index: 999;
+    
+}
+
+.menu.abierto {
+    left: 0;
+    
+}
+
+.menu nav {
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu nav a {
+    padding: 0.6rem 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.1rem;
+    transition: 300ms all ease-in-out;
+    text-decoration: none;
+}
+
+.menu nav a:hover {
+    color: white;
+   
+}
+
+
+
+
+
+h2{
+    
+    font-family: 'Arial', sans-serif;
+  
+    font-size: 100px;
+}
+h4{
+    font-weight: bold; /* Peso de la fuente */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #d4d0d0;
+}
+
+.titulos {
+    color: #9f1b31;
+    
+    font-size: 40px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.logo img {
+    width: 100px; /* Ajustar según el tamaño del logo */
+}
+
+
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(225deg, #443e3e, #000000);
+  
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+    max-width: 33.33333%; /* Máximo ancho de 33.33% en dispositivos grandes */
+    padding: 0 10px; /* Añade espacio entre columnas */
+    text-align: center; /* Centra el contenido */
+}
+.col-3 {
+    font-size: 8px; /* Tamaño de letra para el contenido de col-3 */
+}
+
+.col-2 {
+    flex-grow: 0; /* No crecerá para ocupar más espacio */
+    
+
+}
+
+
+
+.col-2 img.iconos {
+    width: 20px; /* Cambia el ancho del icono */
+    height: 20px; /* Cambia la altura del icono */
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+ 
+    
+}
+
+.col-2 a {
+   color: #d4d0d0;
+ 
+    
+}
+
+ .iconos{
+    margin-right: 0.5rem;
+ }
+
+
+/* Estilos de los párrafos en el footer */
+footer p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+footer p:first-child {
+    font-size: 24px;
+    text-shadow: 3px 3px 40px rgb(167, 174, 169);
+}
+/* barra de navegacion  */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* Estilos del banner */
+.banner {
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 230px;
+    overflow: hidden;
+
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    max-width: 100%; /* Hace que la imagen sea responsive */
+}
+
+.call-button {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    background: linear-gradient(0deg, rgb(226, 4, 4) 0%, rgba(55, 8, 8, 0.875) 0%, rgba(214, 9, 9, 0.891) 84%);
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border-radius: 8px; /* Ajusta el radio del borde del botón */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+}
+
+.call-button:hover {
+    
+    background-color: #f91b03; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border-radius: 8px; /* Ajusta el radio del borde del botón */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+}
+
+/* quienes somos */
+
+.description {
+ 
+    background-color: #ebe9e9;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(87, 84, 84, 0.1);
+    text-align: center;
+    margin: 2em auto;
+    max-width: 1000px;
+    font-size: 20px;
+}
+
+.product-description h2 {
+    color: #f7f3f3;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.product-description p {
+    color: #555;
+    font-size: 26px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.boto {
+   
+    font-size: 25px;
+    text-decoration: none;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #d90429;
+   z-index: 1;
+  }
+  .boto:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .boto:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #ef233c;
+    right: 0;
+  }
+  .boto:active {
+    top: 2px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parallax */
+.fila.parallax {
+    background-image: url('../img/camiones.jpg');
+    background-size:cover ;
+    background-position: center;
+    background-repeat:no-repeat4 ;
+    background-attachment: fixed;
+    padding: 2rem;
+     height: 300px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega sombra */
+    }
+  
+
+    /* servicios */
+
+.tit{
+    margin-top: 1px;
+padding: 5px;
+    background-color: #C01919;
+    
+}
+.tit h2{
+    
+   color: #ffffff;
+    
+}
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }   
+    
+    .servicios-container {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+       
+      background: linear-gradient(0deg, #581515, #C01919);
+      
+    }
+    
+    .servicio {
+        text-align: center;
+        padding: 20px;
+        width: calc(33.333% - 40px); /* Ajuste según la cantidad de servicios y el espacio disponible */
+        max-width: 200px;
+        transition: transform 0.3s ease; /* Agrega una transición de 0.3 segundos para la transformación */
+    }
+    
+    .servicio img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+        filter: invert();
+    }
+    
+    .servicio p {
+        font-size: 18px;
+        color: #faf2f2;
+        font-weight: bold;
+    }
+    
+    .servicio:hover {
+       
+        transform: scale(1.1); /* Aumenta el tamaño del servicio al 110% en hover */
+    }
+    
+/*cotizar */
+.cotizar {
+    
+    width: 100%;
+    max-width: 1300px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    position: relative;
+}
+
+.cotizar img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 8px 8px 0 0; /* Redondea solo las esquinas superiores */
+}
+
+.trans {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 0 0 8px 8px; /* Redondea solo las esquinas inferiores */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 200px; /* Altura máxima para el textarea */
+    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+}
+
+/* Estilos para los checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilos para el botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d90429;;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #128c7e;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .trans {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+}
+
+
+.checkbox-group {
+    margin-top: 15px;
+    display: inline-block; /* Permite que los grupos de checkboxes estén en línea */
+    vertical-align: top; /* Alinea los grupos de checkboxes en la parte superior */
+    margin-right: 20px; /* Añade espacio entre los grupos */
+}
+
+.checkbox-group label {
+    display: block; /* Hace que cada checkbox esté en una nueva línea */
+}
+
+
+
+
+
+     
+ /* camiones disponibles*/
+
+.titulo-camion{
+    color: #9f1b31;
+    
+    font-size: 40px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    text-align: center; /* Alineación del texto */
+    margin-top: 90px; /* Espacio inferior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+ .camiones-disponibles {
+    
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(87, 84, 84, 0.1);
+    text-align: center;
+    margin: 2em auto;
+    max-width: 100%;
+    font-size: 20px;
+    margin-top: 80px;
+    display: grid;
+    grid-gap: 2rem;
+    justify-content:center;
+
+}
+
+/* Media query para dispositivos con pantalla más pequeña */
+@media screen and (min-width: 768px) {
+    .camiones-disponibles {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 1em; /* Reducir el espacio interior */
+    }
+}
+
+
+.caja{
+    width: 400px;
+    height: 400px;
+    border-radius: 0.5rem;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 80px;
+
+}
+
+
+.caja img{
+    height: 250px;
+}
+
+.caja .contenido_caja{
+    padding: 0.8rem;
+    width: 100%;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+    
+}
+
+.caja .contenido_caja p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 15px;
+    
+   
+}
+
+
+
+/* GALERIA IMAGENES */
+#container-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Toma el 100% del viewport height */
+    min-height: 500px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Cambia a altura del 100% del contenedor */
+    min-height: 500px;
+    overflow: hidden;
+}
+
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#container-slider .arrowPrev,
+#container-slider .arrowNext {
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+#container-slider .arrowNext {
+    right: 50px;
+}
+
+.content_slider {
+    padding: 15px 30px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.content_slider h2 {
+    font-family: 'arial';
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial';
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btnSlider {
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+    background: rgba(37, 40, 80, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+.btnSlider:hover {
+    background: #111;
+    border: 1px solid #111;
+}
+
+.listslider {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 2;
+}
+
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.listslider li a {
+    background: #ccc;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item-select-slid {
+    background: #fff !important;
+}
+
+@media screen and (max-width: 460px) {
+    .content_slider h2 {
+        font-size: 15pt;
+    }
+    .content_slider p {
+        font-size: 12pt;
+    }
+    #container-slider .arrowPrev,
+    #container-slider .arrowNext {
+        font-size: 20pt;
+    }
+    #container-slider .arrowPrev {
+        left: 15px;
+    }
+    #container-slider .arrowNext {
+        right: 15px;
+    }
+    #slider {
+        min-height: 400px;
+    }
+    #slider li .content_slider {
+        padding: 10px 35px;
+    }
+    .btnSlider {
+        padding: 10px 30px;
+        font-size: 10pt;
+    }
+}
+
+/* Informacion */
+
+/* Estilos para las imágenes dentro de las columnas */
+img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+  
+  /* Estilos específicos para las filas y columnas */
+  .primera {
+    margin-top: 10vh;
+  }
+  
+  #pr {
+    display: block;
+    margin-top: -90px;
+    padding-bottom: 90px;
+  }
+  
+  .fila {
+    display: flex;
+    padding: 2rem 1rem;
+  }
+  
+  .col-100 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .col-75 {
+    width: 75%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .col-66 {
+    width: 66.66666%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .col-50 {
+    width: 50%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .col-33 {
+    width: 33.33333%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .col-25 {
+    width: 25%;
+    padding: 0.5rem 1rem;
+  }
+  
+  @media (max-width: 720px) {
+    .fila {
+      flex-direction: column;
+      padding: 1rem 0.5rem;
+    }
+  
+    .col-100,
+    .col-75,
+    .col-66,
+    .col-50,
+    .col-33,
+    .col-25 {
+      width: 100%; /* Ajusta el ancho al 100% para ocupar toda la pantalla en dispositivos móviles */
+      padding: 0.5rem 0rem; /* Ajusta el espaciado interno para dispositivos móviles */
+    }
+  }
+  
+
+/* boton whatsapp */
+
+/* Estilos base del botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 5%; /* Distancia desde la parte inferior */
+    right: 1%; /* Distancia desde la derecha */
+    z-index: 9999;
+    background-color: #25d366;
+    padding: 12px; /* Espaciado interno del botón */
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para la imagen del ícono de WhatsApp */
+  .whatsapp-btn img {
+    width: 30px; /* Tamaño de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block;
+  }
+  
+  /* Media query para ajustar el tamaño del botón en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .whatsapp-btn {
+      bottom: 3%; /* Ajustar la distancia inferior */
+      right: 3%; /* Ajustar la distancia derecha */
+      padding: 10px; /* Ajustar el espaciado interno */
+    }
+    
+    .whatsapp-btn img {
+      width: 24px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    }
+  }
+  

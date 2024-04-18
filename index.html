@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes Y Mudanzas AngeloJV</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+</head>
+<body>
+    <div id="pr"> 
+        
+    </div>
+    
+    <section id="Inicio">
+ 
+    </section>
+    <div class="banner">
+        <img src="img/baner1.png" alt="Banner">
+        <a href="tel:+1234567890" class="call-button">Llama ya ! </a>
+    </div>
+    
+ 
+    <header class="transparente">
+        <img src="img/logo.png" alt="Transportes Y Mudanzas AngeloJV">
+        <nav>
+            <a href="#Inicio" class="activo">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#Cotizar">Cotizar</a>
+            <a href="#container-slider">Galería</a>
+        </nav>
+    </header>
+
+
+    <div id="burger">
+        <div class="barra superior"></div>
+        <div class="barra media"></div>
+        <div class="barra inferior"></div>
+    </div>
+    <div class="menu">
+        <nav>
+            <a href="#Inicio">Inicio</a>
+            <hr>
+            <a href="#servicios">Servicios</a>
+            <hr>
+            <a href="#Cotizar">Cotizar</a>
+            <hr>
+            <a href="#container-slider">Galería</a>
+        </nav>
+       
+    </div>
+
+
+
+<div class="description">
+    <h2 class="titulos">¿Quienes somos?</h2>
+    <p>¡Bienvenidos a nuestra tienda de accesorios de computadora y oficina!
+
+        Encontrarás todo lo que necesitas para potenciar tu espacio de trabajo y llevar tus tareas a un nivel superior. Desde accesorios tecnológicos hasta suministros de oficina, nuestra amplia gama de productos está diseñada para mejorar tu productividad y comodidad.
+        
+        Explora nuestra selección de productos de alta calidad, cuidadosamente seleccionados para satisfacer tus necesidades.
+
+        
+  
+     <p>    
+            
+     ¡Explora nuestro catálogo y eleva tu espacio de trabajo con nuestros accesorios de última tecnología y estilo!</p></p>
+
+     <a class="boto" href="#Cotizar">Cotice con nosotros</a>
+   
+</div>
+
+
+
+<div class="fila parallax">
+
+    <div class="col-100">
+        
+    </div>
+    <section id="servicios">
+            </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="tit">
+    <h2 class="titulos">Nuestros Servicios</h2>
+    <h4>¡Con mas de 15 años de experiencia!</h4>
+</div>
+
+<div class="servicios-container">
+    
+    <div class="servicio">
+        <img src="img/ayudantes.png" alt="Servicio con ayudantes">
+        <p>Servicio con ayudantes</p>
+    </div>
+    <div class="servicio">
+        <img src="img/caja.png" alt="Empaque">
+        <p>Empaque</p>
+    </div>
+    <div class="servicio">
+        <img src="img/cinta.png" alt="Embalaje">
+        <p>Embalaje</p>
+    </div>
+    <div class="servicio">
+        <img src="img/camion.png" alt="Guardamebles">
+        <p>Guardamebles</p>
+    </div>
+    <div class="servicio">
+        <img src="img/mapa.png" alt="En todo el país">
+        <p>En todo el país</p>
+    </div>
+    <div class="servicio">
+        <img src="img/llave.png" alt="Desmontaje">
+        <p>Desmontaje</p>
+    </div>
+    <div class="servicio">
+        <img src="img/colon.png" alt="Los mejores precios">
+        <p>Los mejores precios</p>
+    </div>
+    <div class="servicio">
+        <img src="img/experiencia.png" alt="Personal con experiencia">
+        <p>Personal con experiencia</p>
+    </div>
+    <div class="servicio">
+        <img src="img/calidad (2).png" alt="Calidad">
+        <p>Calidad</p>
+    </div>
+    <div class="servicio">
+        <img src="img/bodega.png" alt="Alquiler Minibodega">
+        <p>Alquiler de Minibodega</p>
+    </div>
+</div>
+
+
+
+
+<form action="enviar_formulario.php" method="POST"></form>
+<section id="Cotizar">
+<div class="cotizar">
+
+
+    <img src="img/fondo1.jpg" alt="Descripción de la imagen">
+    <div class="trans">
+        <h2>Solicitud de Cotización</h2>
+
+    <form action="enviar.php" method="POST" >
+
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="0000-0000" autocomplete="tel" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email"  placeholder="ejemplo@mail.com"  autocomplete="email" required>
+        </div>
+        <div class="form-group">
+            <label for="detalles">Detalles de la Mudanza:</label>
+            <textarea id="detalles" name="detalles" placeholder="Indicar detalles importantes de la mudanza, como el lugar de carga y el lugar de descarga, fecha y hora, aproximado de cantidad de muebles y cualquier otro detalle importante a la hora de la mudanza. Nuestro equipo se pondrá en contacto lo más antes posible!" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Otros Datos:</label><br>
+            <div class="checkbox-group">
+                <label for="embalaje">
+                    <input type="checkbox" id="embalaje" name="embalaje">
+                    Servicio de Embalaje
+                </label><br>
+                <label for="desmontaje">
+                    <input type="checkbox" id="desmontaje" name="desmontaje">
+                    Servicio de Desmontaje
+                </label><br>
+                <label for="guardamebles">
+                    <input type="checkbox" id="guardamebles" name="guardamebles">
+                    Guardamuebles
+                </label>
+            </div>
+            <div class="checkbox-group">
+                <label for="seguro">
+                    <input type="checkbox" id="seguro" name="seguro">
+                    Servicio de Seguro
+                </label><br>
+                <label for="transporte">
+                    <input type="checkbox" id="transporte" name="transporte">
+                    Servicio de Transporte
+                </label><br>
+                <label for="limpieza">
+                    <input type="checkbox" id="limpieza" name="limpieza">
+                    Servicio de Limpieza
+                </label>
+            </div>
+        </div>
+        <input type="submit" value="Enviar" id="boton">
+        
+        <button type="button" id="enviarBtn">Enviar Cotización</button>
+
+    </form>
+
+    </div>
+
+</div>
+
+</section>
+
+</form>
+
+
+
+   <div class="fila primera" >
+        
+        <div class="col-66">
+            <p>Lorem ipsum dolor siticabo quisquam repellendus ducimus aspernatur, hic, nulla excepturi natus consectetur neque officia quam, quas deleniti aliquam minus ipsam quos 
+            <p>atur, hic, nulla excepturi natus consectetur neque officia quam, quLorem ipsum elnus ipsam quos 
+        </div>
+
+           
+        <div class="col-33"> 
+            <img src="img/colon.png" alt="m">
+        </div>
+    </div>
+
+    <div class="fila">
+
+        <div class="col-50">
+            <img src="img/calidad (2).png" alt="">
+        </div>
+        <div class="col-50">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, accusantium. Earum rerum ex repellat doloremque cupiditate deserunt dolore voluptatem, nostrum suscipit sequi quam expedita? Quis doloribus velit modi enim nam.</p>
+        </div>
+
+    </div>
+
+    <section id="container-slider">    
+        <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+          <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+          <li><a itlist="itList_1" href="#"></a></li>
+          <li><a itlist="itList_2" href="#"></a></li>
+          <li><a itlist="itList_3" href="#"></a></li>
+          <li><a itlist="itList_4" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+          <li style="background-image: url('img/foto1.jpg'); z-index:0; opacity: 1;">
+            <div class="content_slider" >
+              <div>
+                <h2>Imagen 1</h2>
+            <p>Escribe el texto que aparecerá sobre la imagen número 1.</p>
+            <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+          <li style="background-image: url('img/foto7.jpg'); ">
+            <div class="content_slider" >
+              <div>
+                <h2>Imagen 2</h2>
+            <p>Escribe el texto que aparecerá sobre la imagen número 2</p>
+            <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+
+          <li style="background-image: url('img/foto3.jpg'); ">
+            <div class="content_slider" >
+              <div>
+                <h2>Imagen 3</h2>
+            <p>Escribe el texto que aparecerá sobre la imagen número 3</p>
+            <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+          <li style="background-image: url('img/foto4.jpg'); ">
+            <div class="content_slider" >
+              <div>
+                <h2>Imagen 3</h2>
+            <p>Escribe el texto que aparecerá sobre la imagen número 3</p>
+            <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+          <li style="background-image: url('img/foto5.jpg'); ">
+            <div class="content_slider" >
+              <div>
+                <h2>Imagen 3</h2>
+            <p>Escribe el texto que aparecerá sobre la imagen número 3</p>
+            <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+          </div>
+            </div>
+          </li>
+       </ul>
+     </section>
+
+    <a href="https://wa.me/50683411049" class="whatsapp-btn" target="_blank">
+        <img src="/img/whatsapp.png" alt="WhatsApp" width="50" height="50">
+      </a>
+
+
+<footer class="fila">
+    <div class="col-1">
+        <p>Sobre Nosotros</p>
+        <p >
+            Somos una empresa de mudanzas en Costa Rica que cuenta con más de 10 años de experiencia en transportes, 
+            fletes, mudanzas locales, empresariales, internacionales, guardamuebles, entre otros. Ofrecemos un servicio al cliente personalizado y de calidad mundial.
+        </p>
+       
+    
+    </div>
+
+    <div class="col-2">
+        <p>Contáctenos</p>
+       
+        
+        <p>
+            <img class="iconos" src="img/phone.svg" alt="icno telefono">
+            +506 8341 1049
+        </p>
+        <p >
+            <img class="iconos" src="img/mail.svg" alt="icono mail">
+            angelogomezjv@gmail.com
+        
+        </p>
+        
+
+       
+
+        <p >
+            <img class="iconos" src="img/map.svg" alt="icono mapa">
+            En todo el Pais
+        
+        </p>
+        <p >
+            <img class="iconos" src="img/facebook.svg" alt="icono face">
+            <a href="https://www.facebook.com/profile.php?id=100063473502004">Síguenos en Facebook</a>
+        
+        </p>
+        
+    </div>
+
+    <div class="col-3">
+
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        &copy; Transportes Y Mudanzas Angelo JV All rights reserved 
+        
+    
+    </div>
+
+</footer>
+
+</body>
+</html>
