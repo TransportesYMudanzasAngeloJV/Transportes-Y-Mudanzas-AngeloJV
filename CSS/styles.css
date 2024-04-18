@@ -328,7 +328,15 @@ nav ul li a {
     border-radius: 8px; /* Ajusta el radio del borde del botón */
     text-decoration: none; /* Elimina la subrayado del enlace */
 }
-
+@media (max-width: 768px) {
+    .call-button {
+        position: absolute; /* Cambia la posición a fija para dispositivos pequeños */
+        bottom: 2%; /* Ajusta la distancia desde la parte inferior (en porcentaje) */
+        right: 2%; /* Ajusta la distancia desde el borde derecho (en porcentaje) */
+        padding: 0.6rem 0.5rem; /* Ajusta el padding del botón para dispositivos pequeños */
+        font-size: 13PX;
+    }
+}
 /* quienes somos */
 
 .description {
