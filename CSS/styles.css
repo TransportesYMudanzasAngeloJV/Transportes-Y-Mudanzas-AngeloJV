@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -319,7 +319,7 @@ nav ul li a {
     border-radius: 8px; /* Ajusta el radio del borde del botón */
     text-decoration: none; /* Elimina la subrayado del enlace */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-    background-image: url('/img/llamar.png'); /* Ruta de la imagen del icono */
+    background-image: url('/img/phone.svg'); /* Ruta de la imagen del icono */
     background-repeat: no-repeat; /* Evita que el fondo se repita */
     background-size: 20px; /* Tamaño del icono */
     background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
@@ -335,7 +335,7 @@ nav ul li a {
     border-radius: 8px; /* Ajusta el radio del borde del botón */
     text-decoration: none; /* Elimina la subrayado del enlace */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-    background-image: url('/img/llamar.png'); /* Ruta de la imagen del icono */
+    background-image: url('/img/phone.svg'); /* Ruta de la imagen del icono */
     background-repeat: no-repeat; /* Evita que el fondo se repita */
     background-size: 20px; /* Tamaño del icono */
     background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
@@ -349,7 +349,7 @@ nav ul li a {
         padding: 0.6rem 0.5rem; /* Ajusta el padding del botón para dispositivos pequeños */
         font-size: 13PX;
         transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-        background-image: url('/img/llamar.png'); /* Ruta de la imagen del icono */
+        background-image: url('/img/phone.svg'); /* Ruta de la imagen del icono */
         background-repeat: no-repeat; /* Evita que el fondo se repita */
         background-size: 20px; /* Tamaño del icono */
         background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
@@ -619,86 +619,6 @@ button:hover {
 
 
 
-
-
-     
- /* camiones disponibles*/
-
-.titulo-camion{
-    color: #9f1b31;
-    
-    font-size: 40px; /* Tamaño de la fuente */
-    font-weight: bold; /* Peso de la fuente */
-    text-transform: uppercase; /* Transforma el texto a mayúsculas */
-    text-align: center; /* Alineación del texto */
-    margin-top: 90px; /* Espacio inferior */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-
-}
- .camiones-disponibles {
-    
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(87, 84, 84, 0.1);
-    text-align: center;
-    margin: 2em auto;
-    max-width: 100%;
-    font-size: 20px;
-    margin-top: 80px;
-    display: grid;
-    grid-gap: 2rem;
-    justify-content:center;
-
-}
-
-/* Media query para dispositivos con pantalla más pequeña */
-@media screen and (min-width: 768px) {
-    .camiones-disponibles {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        padding: 1em; /* Reducir el espacio interior */
-    }
-}
-
-
-.caja{
-    width: 400px;
-    height: 400px;
-    border-radius: 0.5rem;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    margin-bottom: 80px;
-
-}
-
-
-.caja img{
-    height: 250px;
-}
-
-.caja .contenido_caja{
-    padding: 0.8rem;
-    width: 100%;
-    height: 174px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-   
-    
-}
-
-.caja .contenido_caja p{
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 15px;
-    
-   
-}
 
 
 
