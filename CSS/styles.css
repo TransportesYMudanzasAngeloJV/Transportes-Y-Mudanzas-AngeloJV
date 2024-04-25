@@ -308,55 +308,46 @@ nav ul li a {
     height: 230px;
     max-width: 100%; /* Hace que la imagen sea responsive */
 }
-
+/* Estilos para el botón de llamada */
 .call-button {
-    background-color: #bd1c0a; /* Color de fondo del botón */
     position: absolute;
-    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
-    right: 10px; /* Ajusta la distancia desde el borde derecho */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 20px; /* Ajusta el padding del botón */
-    border-radius: 8px; /* Ajusta el radio del borde del botón */
-    text-decoration: none; /* Elimina la subrayado del enlace */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-    background-image: url('/img/phone.svg'); /* Ruta de la imagen del icono */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-size: 20px; /* Tamaño del icono */
-    background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
-    padding-left: 40px;
-    
+    bottom: 10px;
+    right: 10px;
+    background-color: #bd1c0a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    transition: background-color 0.3s ease;
 }
 
-.call-button:hover {
-    
-    background-color: #f91b03; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 20px; /* Ajusta el padding del botón */
-    border-radius: 8px; /* Ajusta el radio del borde del botón */
-    text-decoration: none; /* Elimina la subrayado del enlace */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-    background-image: url('/img/phone.svg'); /* Ruta de la imagen del icono */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-size: 20px; /* Tamaño del icono */
-    background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
-    padding-left: 40px;
+/* Estilos para la imagen dentro del botón */
+.call-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
 }
+
+/* Estilos para el botón al pasar el cursor */
+.call-button:hover {
+    background-color: #f91b03;
+    transition: background-color 0.3s ease;
+}
+
+/* Media query para dispositivos pequeños */
 @media (max-width: 768px) {
     .call-button {
-        position: absolute; /* Cambia la posición a fija para dispositivos pequeños */
-        bottom: 2%; /* Ajusta la distancia desde la parte inferior (en porcentaje) */
-        right: 2%; /* Ajusta la distancia desde el borde derecho (en porcentaje) */
-        padding: 0.6rem 0.5rem; /* Ajusta el padding del botón para dispositivos pequeños */
-        font-size: 13PX;
-        transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-        background-image: url('/img/phone.svg'); /* Ruta de la imagen del icono */
-        background-repeat: no-repeat; /* Evita que el fondo se repita */
-        background-size: 20px; /* Tamaño del icono */
-        background-position: 10px center; /* Posición del icono a 10px desde la izquierda y centrado verticalmente */
-        padding-left: 33px;
-
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        padding: 0.6rem 0.5rem;
+        font-size: 13px;
     }
 }
+
 /* quienes somos */
 
 .description {
