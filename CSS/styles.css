@@ -48,9 +48,11 @@ header nav a {
     font-weight: normal;
     margin-left: 1em;
     margin-right: 2em;
-    font-size: 19px; /* Tamaño de fuente base */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Transición suave para color y tamaño de fuente */
+    font-size: 18px;
+    -webkit-transition: color 0.3s ease, font-size 0.3s ease; /* Prefijo para Chrome y Safari */
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transición estándar */
 }
+
 
 /* Estilos para la navegación cuando el encabezado es transparente */
 header.transparente nav a {
